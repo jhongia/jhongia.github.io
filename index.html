@@ -1,14 +1,211 @@
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Jhon Gia</title>
-    <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-    <h1>Jhon Gia</h1>
-    <p>New Page</p>
-    <p>Tue Nov 8 2022</p>
-</body>
+<!doctype html>
+<html lang="en" data-theme="dark">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Jhon Garcia Lecca | Software Engineer</title>
+
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <!-- THEME TOGGLE -->
+    <div class="theme-switch">
+      <i class="fa-solid fa-sun"></i>
+      <label class="switch">
+        <input type="checkbox" id="themeToggle" />
+        <span class="slider"></span>
+      </label>
+      <i class="fa-solid fa-moon"></i>
+    </div>
+
+    <!-- HERO -->
+    <header class="hero">
+      <div class="container">
+        <h1>Jhon Garcia Lecca</h1>
+        <p class="subtitle">Full-Stack Software Engineer</p>
+        <p class="location">New Jersey, USA</p>
+
+        <div class="cta-buttons">
+          <a
+            href="https://github.com/jhongia"
+            target="_blank"
+            class="btn btn-dark"
+          >
+            <i class="fa-brands fa-github"></i> GitHub
+          </a>
+
+          <a
+            href="https://linkedin.com/in/jhonGarcia1"
+            target="_blank"
+            class="btn btn-linkedin"
+          >
+            <i class="fa-brands fa-linkedin"></i> LinkedIn
+          </a>
+
+          <a href="mailto:jhongxw@gmail.com" class="btn btn-email">
+            <i class="fa-solid fa-envelope"></i> Email
+          </a>
+        </div>
+
+        <!-- RESUME SPLIT BUTTONS -->
+        <div class="resume-buttons">
+          <a
+            href="https://drive.google.com/file/d/1s-6EJ-t6lZhuF82thX50d1gypGv2Yx5p/view?usp=sharing"
+            target="_blank"
+            class="btn btn-primary"
+          >
+            <i class="fa-solid fa-eye"></i> View Resume
+          </a>
+
+          <a
+            href="https://drive.google.com/uc?export=download&id=1s-6EJ-t6lZhuF82thX50d1gypGv2Yx5p"
+            class="btn btn-outline"
+          >
+            <i class="fa-solid fa-download"></i> Download
+          </a>
+        </div>
+      </div>
+    </header>
+
+    <!-- ABOUT -->
+    <section class="section">
+      <div class="container">
+        <h2>About Me</h2>
+        <p>
+          Full-Stack Software Engineer with experience building and maintaining
+          large-scale enterprise web applications supporting over 100,000 users.
+          Strong focus on performance, accessibility, security, and scalable
+          backend services.
+        </p>
+      </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section class="section alt">
+      <div class="container">
+        <h2>Technical Skills</h2>
+
+        <div class="skills-grid">
+          <div>
+            <h3>Languages</h3>
+            <p>C#, JavaScript, TypeScript, Python, SQL, C++</p>
+          </div>
+          <div>
+            <h3>Frameworks</h3>
+            <p>.NET, Angular, AngularJS, Node.js</p>
+          </div>
+          <div>
+            <h3>Databases</h3>
+            <p>SQL Server, MySQL, MongoDB</p>
+          </div>
+          <div>
+            <h3>Tools</h3>
+            <p>Git, Jenkins, Dynatrace, SonarQube, Jira, TFS, AWS S3</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- EXPERIENCE -->
+    <section class="section">
+      <div class="container">
+        <h2>Experience</h2>
+
+        <div class="job">
+          <h3>Associate Application Developer — ADP</h3>
+          <span class="job-date"
+            >July 2022 – September 2024 · Roseland, NJ</span
+          >
+          <ul>
+            <li>
+              Developed and maintained enterprise Employee Self-Service
+              applications using Angular, AngularJS, C#, and SQL for 100,000+
+              clients.
+            </li>
+            <li>
+              Integrated a real-time customer support chatbot, reducing support
+              calls by 40%.
+            </li>
+            <li>
+              Implemented WCAG-compliant accessibility enhancements using Deque
+              Axe DevTools.
+            </li>
+            <li>
+              Designed dynamic, client-specific pages and menus for 50,000+
+              users.
+            </li>
+            <li>
+              Built secure C# microservices and REST APIs backed by SQL Server.
+            </li>
+            <li>
+              Optimized SQL queries and indexing, reducing latency and
+              production issues.
+            </li>
+            <li>
+              Remediated XSS vulnerabilities and implemented token-based
+              authentication.
+            </li>
+            <li>Collaborated in Agile/Scrum teams using CI/CD pipelines.</li>
+          </ul>
+        </div>
+
+        <div class="job">
+          <h3>Software Engineering Intern — ADP</h3>
+          <span class="job-date">June 2021 – August 2021 · Remote</span>
+          <ul>
+            <li>Built a full-stack document processing web application.</li>
+            <li>Integrated Node.js and Python services with AWS S3.</li>
+            <li>
+              Designed MongoDB schemas for high-volume document workflows.
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- EDUCATION -->
+    <section class="section alt">
+      <div class="container">
+        <h2>Education</h2>
+        <p>
+          <strong>B.S. Computer Science</strong> — New Jersey Institute of
+          Technology (2022)
+        </p>
+        <p>
+          <strong>A.S. Computer Science</strong> — Passaic County Community
+          College (2019)
+        </p>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="container">
+        <p>© 2026 Jhon Garcia Lecca</p>
+      </div>
+    </footer>
+
+    <!-- THEME SCRIPT -->
+    <script>
+      const toggle = document.getElementById("themeToggle");
+      const root = document.documentElement;
+
+      const savedTheme = localStorage.getItem("theme");
+      if (savedTheme === "dark") {
+        root.setAttribute("data-theme", "dark");
+        toggle.checked = true;
+      }
+
+      toggle.addEventListener("change", () => {
+        const theme = toggle.checked ? "dark" : "light";
+        root.setAttribute("data-theme", theme);
+        localStorage.setItem("theme", theme);
+      });
+    </script>
+  </body>
 </html>
