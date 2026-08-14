@@ -1,233 +1,115 @@
 <!doctype html>
 <html lang="en" data-theme="dark">
   <head>
-    <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-ENP2FZPTDG"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-ENP2FZPTDG');
-</script>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Jhon Garcia Lecca | Software Engineer</title>
-
-    <!-- Font Awesome -->
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
-    />
-
+    <meta name="description" content="Jhon Garcia Lecca — Full-Stack Software Engineer building scalable, secure and accessible web applications." />
+    <meta name="theme-color" content="#050816" />
+    <title>Jhon Garcia Lecca | Full-Stack Software Engineer</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <!-- THEME TOGGLE -->
-    <div class="theme-switch">
-      <i class="fa-solid fa-sun"></i>
-      <label class="switch">
-        <input type="checkbox" id="themeToggle" />
-        <span class="slider"></span>
-      </label>
-      <i class="fa-solid fa-moon"></i>
-    </div>
+    <div class="scroll-progress" id="scrollProgress"></div>
+    <div class="cursor-glow" id="cursorGlow"></div>
 
-    <!-- HERO -->
-    <header class="hero">
-      <div class="container">
-        <h1>Jhon Garcia Lecca</h1>
-        <p class="subtitle">Full-Stack Software Engineer</p>
-        <p class="location">New Jersey, USA</p>
-        <p class="location">Mobile: (973) 389-3566 | Email: jhongxw@gmail.com</p>
+    <nav class="nav" id="nav">
+      <a class="brand" href="#top" aria-label="Jhon Garcia Lecca home"><span>JG</span><strong>Jhon Garcia Lecca</strong></a>
+      <div class="nav-links">
+        <a href="#work">Work</a>
+        <a href="#experience">Experience</a>
+        <a href="#skills">Skills</a>
+        <a href="#contact">Contact</a>
+      </div>
+      <div class="nav-actions">
+        <button class="icon-button" id="themeToggle" aria-label="Toggle theme" title="Toggle theme">☼</button>
+        <a class="nav-cta" href="mailto:jhongxw@gmail.com">Let's talk <span>↗</span></a>
+      </div>
+    </nav>
 
-        <div class="cta-buttons">
-          <a
-            href="https://github.com/jhongia"
-            target="_blank"
-            class="btn btn-dark"
-          >
-            <i class="fa-brands fa-github"></i> GitHub
-          </a>
-
-          <a
-            href="https://linkedin.com/in/jhonGarcia1"
-            target="_blank"
-            class="btn btn-linkedin"
-          >
-            <i class="fa-brands fa-linkedin"></i> LinkedIn
-          </a>
-
-          <a href="mailto:jhongxw@gmail.com" class="btn btn-email">
-            <i class="fa-solid fa-envelope"></i> Email
-          </a>
+    <main id="top">
+      <section class="hero container">
+        <div class="hero-copy reveal">
+          <div class="eyebrow"><span class="status-dot"></span> Open to software engineering opportunities</div>
+          <h1>I build software that <em>works hard.</em></h1>
+          <p class="hero-lead">Full-Stack Software Engineer focused on scalable web applications, clean APIs, performance, security, and thoughtful user experiences.</p>
+          <div class="hero-actions">
+            <a class="button primary" href="#work">Explore my work <span>↓</span></a>
+            <a class="button secondary" href="resume.pdf" target="_blank" rel="noopener">View resume <span>↗</span></a>
+          </div>
+          <div class="hero-meta"><span>Based in New Jersey, USA</span><span>•</span><span>2+ years professional experience</span></div>
         </div>
 
-        <!-- RESUME SPLIT BUTTONS -->
-        <div class="resume-buttons">
-          <a
-            href="https://drive.google.com/file/d/1WpG49oTW8fczWYy-2xJ6Om1mhyqdk2s7/view?usp=sharing"
-            target="_blank"
-            class="btn btn-primary"
-          >
-            <i class="fa-solid fa-eye"></i> View Resume
-          </a>
-
-          <a
-            href="https://drive.google.com/uc?export=download&id=1WpG49oTW8fczWYy-2xJ6Om1mhyqdk2s7"
-            class="btn btn-outline"
-          >
-            <i class="fa-solid fa-download"></i> Download
-          </a>
-        </div>
-      </div>
-    </header>
-
-    <!-- ABOUT -->
-    <section class="section">
-      <div class="container">
-        <h2>About Me</h2>
-        <p>
-          Full-Stack Software Engineer experienced building enterprise Employee
-          Self-Service applications with Angular, .NET, and SQL. Skilled at
-          improving accessibility, security, and performance for cloud-backed
-          systems and delivering scalable solutions for 100,000+ clients.
-        </p>
-      </div>
-    </section>
-
-    <!-- SKILLS -->
-    <section class="section alt">
-      <div class="container">
-        <h2>Technical Skills</h2>
-
-        <div class="skills-grid">
-          <div>
-            <h3>Languages</h3>
-            <p>C#, JavaScript, TypeScript, Python, SQL, C++</p>
-          </div>
-          <div>
-            <h3>Frameworks</h3>
-            <p>.NET, Angular, AngularJS, Node.js</p>
-          </div>
-          <div>
-            <h3>Databases</h3>
-            <p>SQL Server, MySQL, MongoDB</p>
-          </div>
-          <div>
-            <h3>Tools</h3>
-            <p>Git, GitHub Actions, Jenkins, Dynatrace, SonarQube, Jira, TFS, AWS S3, Google Analytics, GitHub Copilot, Claude Code, Codex, Ollama, OpenClaw</p>
+        <div class="terminal-card reveal delay-2" aria-label="Developer profile terminal">
+          <div class="terminal-top"><div class="window-dots"><i></i><i></i><i></i></div><span>jhon@portfolio ~ %</span><span class="terminal-live">● live</span></div>
+          <div class="terminal-body">
+            <p><span class="prompt">$</span> whoami</p>
+            <p class="terminal-output">Jhon Garcia Lecca</p>
+            <p><span class="prompt">$</span> stack --primary</p>
+            <p class="terminal-output">C# · .NET · Angular · TypeScript · SQL</p>
+            <p><span class="prompt">$</span> impact --highlight</p>
+            <div class="terminal-stats"><strong>100K+</strong><span>clients supported</span><strong>40%</strong><span>fewer assistance calls</span><strong>50K+</strong><span>client configurations</span></div>
+            <p><span class="prompt">$</span> status</p>
+            <p class="terminal-output success">✓ Building. Learning. Improving.</p>
+            <span class="terminal-caret"></span>
           </div>
         </div>
-      </div>
-    </section>
+      </section>
 
-    <!-- EXPERIENCE -->
-    <section class="section">
-      <div class="container">
-        <h2>Experience</h2>
+      <section class="impact-strip container reveal">
+        <div><strong>100K+</strong><span>clients supported</span></div>
+        <div><strong>40%</strong><span>fewer assistance calls</span></div>
+        <div><strong>50K+</strong><span>client configurations</span></div>
+        <div><strong>WCAG</strong><span>accessibility focused</span></div>
+      </section>
 
-        <div class="job">
-          <h3>Associate Application Developer — ADP (Automatic Data Processing)</h3>
-          <span class="job-date"
-            >July 2022 – September 2024 · Roseland, NJ</span
-          >
-          <ul>
-            <li>
-              Developed and maintained large-scale enterprise Employee
-              Self-Service web applications using Angular/AngularJS, JavaScript,
-              C#, and SQL, supporting 100,000+ clients.
-            </li>
-            <li>
-              Integrated a real-time customer support chatbot using AngularJS
-              and C#, reducing assistance calls by over 40%.
-            </li>
-            <li>
-              Implemented WCAG-compliant accessibility enhancements using
-              Deque AxeDevTools, improving usability and regulatory compliance.
-            </li>
-            <li>
-              Designed and implemented dynamic, client-specific pages and menu
-              configurations for 50,000+ users, consolidating multiple portals
-              into a single customizable platform.
-            </li>
-            <li>
-              Designed and optimized secure C# microservices and REST APIs for
-              low-latency CRUD operations in SQL Server-backed systems.
-            </li>
-            <li>
-              Optimized SQL Server queries and indexing, reducing document
-              retrieval latency and production support tickets.
-            </li>
-            <li>
-              Strengthened application security by remediating XSS
-              vulnerabilities and implementing secure token-based authentication.
-            </li>
-            <li>
-              Collaborated in Agile/Scrum teams to deliver tested, production-ready
-              APIs and supported CI/CD deployment workflows.
-            </li>
-          </ul>
+      <section class="section container" id="work">
+        <div class="section-heading reveal"><div><span class="section-kicker">SELECTED WORK</span><h2>Things I've built.</h2></div><p>Projects that show how I think beyond just writing code.</p></div>
+        <div class="project-grid">
+          <article class="project-card featured reveal">
+            <div class="project-visual ai-visual"><span class="orb orb-a"></span><span class="orb orb-b"></span><div class="ai-window"><span>AI assistant</span><strong>Ask. Automate. Extend.</strong><small>Telegram → Python → OpenAI</small></div></div>
+            <div class="project-content"><div class="project-top"><span class="project-type">AI / AUTOMATION</span><a href="https://github.com/jhongia/AI-Personal-Assistant" target="_blank" rel="noopener" aria-label="View AI Personal Assistant on GitHub">↗</a></div><h3>AI Personal Assistant</h3><p>A modular conversational assistant connecting Telegram with OpenAI models through a lightweight Python backend, designed for automation and future tool integrations.</p><div class="tags"><span>Python</span><span>OpenAI</span><span>Telegram API</span><span>dotenv</span></div></div>
+          </article>
+          <article class="project-card reveal delay-1">
+            <div class="project-visual architecture"><div class="architecture-line one"></div><div class="architecture-line two"></div><div class="architecture-node">API</div><div class="architecture-node">SQL</div><div class="architecture-node">UI</div></div>
+            <div class="project-content"><div class="project-top"><span class="project-type">ENTERPRISE ENGINEERING</span></div><h3>Employee Self-Service Platform</h3><p>Enterprise web application work at ADP spanning Angular, C#, REST APIs and SQL Server for a platform serving 100,000+ clients.</p><div class="tags"><span>C#</span><span>.NET</span><span>Angular</span><span>SQL Server</span></div></div>
+          </article>
+          <article class="project-card reveal delay-2">
+            <div class="project-visual cloud"><span class="cloud-shape">☁</span><span class="cloud-node n1">Node</span><span class="cloud-node n2">S3</span><span class="cloud-node n3">MongoDB</span></div>
+            <div class="project-content"><div class="project-top"><span class="project-type">CLOUD / FULL STACK</span></div><h3>Document Processing App</h3><p>Full-stack document submission and processing application built during an ADP internship with Node.js, Python, AWS S3 and MongoDB.</p><div class="tags"><span>Node.js</span><span>Python</span><span>AWS S3</span><span>MongoDB</span></div></div>
+          </article>
         </div>
+      </section>
 
-        <div class="job">
-          <h3>Software Engineering Intern — ADP (Automatic Data Processing)</h3>
-          <span class="job-date">June 2021 – August 2021 · Remote</span>
-          <ul>
-            <li>
-              Developed a full-stack document submission and processing web
-              application using JavaScript, HTML, Bootstrap, and Python.
-            </li>
-            <li>
-              Implemented backend services using Node.js and Python to integrate
-              with AWS S3 for secure, scalable document storage.
-            </li>
-            <li>
-              Designed and optimized MongoDB data models for high-volume
-              document processing, improving responsiveness and reliability.
-            </li>
-          </ul>
+      <section class="section container" id="experience">
+        <div class="section-heading reveal"><div><span class="section-kicker">EXPERIENCE</span><h2>Where I've made an impact.</h2></div></div>
+        <div class="timeline">
+          <article class="timeline-item reveal"><div class="timeline-marker"></div><div class="timeline-date">JUL 2022 — SEP 2024</div><div class="timeline-card"><div class="timeline-title"><div><h3>Associate Application Developer</h3><p>ADP · Roseland, NJ</p></div><span class="pill">2 yrs 3 mos</span></div><ul><li>Built and maintained enterprise Employee Self-Service applications using Angular/AngularJS, C#, JavaScript and SQL.</li><li>Integrated a real-time support chatbot that reduced assistance calls by <strong>40%+</strong>.</li><li>Created dynamic client-specific experiences for <strong>50,000+</strong> users while consolidating multiple portals.</li><li>Optimized SQL queries and indexing, improved API performance, and remediated XSS vulnerabilities.</li><li>Delivered WCAG-focused accessibility improvements and supported CI/CD deployment workflows.</li></ul><div class="tags"><span>Angular</span><span>C#</span><span>.NET</span><span>SQL Server</span><span>REST APIs</span></div></div></article>
+          <article class="timeline-item reveal"><div class="timeline-marker"></div><div class="timeline-date">JUN 2021 — AUG 2021</div><div class="timeline-card"><div class="timeline-title"><div><h3>Software Engineering Intern</h3><p>ADP · Remote</p></div><span class="pill">Summer 2021</span></div><ul><li>Developed a full-stack document submission and processing application with JavaScript, HTML, Bootstrap and Python.</li><li>Built backend services with Node.js and Python integrating AWS S3 for secure document storage.</li><li>Designed MongoDB data models for high-volume document processing.</li></ul><div class="tags"><span>Python</span><span>Node.js</span><span>AWS S3</span><span>MongoDB</span></div></div></article>
         </div>
-      </div>
-    </section>
+      </section>
 
-    <!-- EDUCATION -->
-    <section class="section alt">
-      <div class="container">
-        <h2>Education</h2>
-        <p>
-          <strong>Bachelor of Science in Computer Science</strong> — New Jersey
-          Institute of Technology, May 2022
-        </p>
-        <p>
-          <strong>Associate Degree in Computer Science</strong> — Passaic County
-          Community College, May 2019
-        </p>
-      </div>
-    </section>
+      <section class="section container" id="skills">
+        <div class="section-heading reveal"><div><span class="section-kicker">TOOLBOX</span><h2>Technologies I work with.</h2></div><p>Click a category to filter the stack.</p></div>
+        <div class="skill-filters reveal"><button class="filter active" data-filter="all">All</button><button class="filter" data-filter="frontend">Frontend</button><button class="filter" data-filter="backend">Backend</button><button class="filter" data-filter="data">Data</button><button class="filter" data-filter="tools">Tools & AI</button></div>
+        <div class="skill-cloud reveal" id="skillCloud">
+          <span data-category="backend">C#</span><span data-category="backend">.NET</span><span data-category="frontend">Angular</span><span data-category="frontend">AngularJS</span><span data-category="frontend">JavaScript</span><span data-category="frontend">TypeScript</span><span data-category="backend">Node.js</span><span data-category="backend">Python</span><span data-category="data">SQL Server</span><span data-category="data">MySQL</span><span data-category="data">MongoDB</span><span data-category="tools">Git</span><span data-category="tools">GitHub Actions</span><span data-category="tools">Jenkins</span><span data-category="tools">Dynatrace</span><span data-category="tools">SonarQube</span><span data-category="tools">AWS S3</span><span data-category="tools">GitHub Copilot</span><span data-category="tools">Claude Code</span><span data-category="tools">Ollama</span><span data-category="tools">Codex</span>
+        </div>
+      </section>
 
-    <footer class="footer">
-      <div class="container">
-        <p>© 2026 Jhon Garcia Lecca</p>
-      </div>
-    </footer>
+      <section class="about-banner container reveal">
+        <div><span class="section-kicker">A LITTLE MORE</span><h2>Good engineering is more than code.</h2><p>I care about the details that make software dependable: accessibility, security, performance, maintainability, and a clear experience for the person using it.</p></div>
+        <div class="principles"><div><span>01</span><strong>Build for people</strong><small>Accessible, intuitive experiences.</small></div><div><span>02</span><strong>Measure impact</strong><small>Performance and outcomes matter.</small></div><div><span>03</span><strong>Keep learning</strong><small>Curious about AI and modern tooling.</small></div></div>
+      </section>
 
-    <!-- THEME SCRIPT -->
-    <script>
-      const toggle = document.getElementById("themeToggle");
-      const root = document.documentElement;
+      <section class="contact container reveal" id="contact">
+        <span class="section-kicker">HAVE A ROLE IN MIND?</span><h2>Let's build something<br /><em>worth shipping.</em></h2><p>I'm interested in teams solving meaningful problems with modern software and thoughtful engineering.</p><div class="contact-actions"><a class="button primary" href="mailto:jhongxw@gmail.com">Email me <span>↗</span></a><a class="button secondary" href="https://www.linkedin.com/in/jhonGarcia1" target="_blank" rel="noopener">LinkedIn <span>↗</span></a><a class="button secondary" href="https://github.com/jhongia" target="_blank" rel="noopener">GitHub <span>↗</span></a></div>
+      </section>
+    </main>
 
-      const savedTheme = localStorage.getItem("theme");
-      if (savedTheme === "dark") {
-        root.setAttribute("data-theme", "dark");
-        toggle.checked = true;
-      }
-
-      toggle.addEventListener("change", () => {
-        const theme = toggle.checked ? "dark" : "light";
-        root.setAttribute("data-theme", theme);
-        localStorage.setItem("theme", theme);
-      });
-    </script>
+    <footer><div class="container footer-inner"><span>© 2026 Jhon Garcia Lecca</span><span>Designed & built with HTML, CSS & JavaScript.</span><a href="#top">Back to top ↑</a></div></footer>
+    <script src="script.js"></script>
   </body>
 </html>
