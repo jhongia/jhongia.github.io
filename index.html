@@ -1,115 +1,121 @@
 <!doctype html>
 <html lang="en" data-theme="dark">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Jhon Garcia Lecca — Full-Stack Software Engineer building scalable, secure and accessible web applications." />
-    <meta name="theme-color" content="#050816" />
-    <title>Jhon Garcia Lecca | Full-Stack Software Engineer</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
-    <link rel="stylesheet" href="styles.css" />
-  </head>
-  <body>
-    <div class="scroll-progress" id="scrollProgress"></div>
-    <div class="cursor-glow" id="cursorGlow"></div>
-
-    <nav class="nav" id="nav">
-      <a class="brand" href="#top" aria-label="Jhon Garcia Lecca home"><span>JG</span><strong>Jhon Garcia Lecca</strong></a>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Jhon Garcia Lecca — Full-Stack Software Engineer. C#, .NET, Angular, TypeScript, Python and SQL.">
+  <title>Jhon Garcia Lecca | Software Engineer</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <nav class="nav container">
+      <a class="logo" href="#top">JG<span>.</span></a>
       <div class="nav-links">
-        <a href="#work">Work</a>
+        <a href="#about">About</a>
         <a href="#experience">Experience</a>
+        <a href="#projects">Projects</a>
         <a href="#skills">Skills</a>
-        <a href="#contact">Contact</a>
       </div>
-      <div class="nav-actions">
-        <button class="icon-button" id="themeToggle" aria-label="Toggle theme" title="Toggle theme">☼</button>
-        <a class="nav-cta" href="mailto:jhongxw@gmail.com">Let's talk <span>↗</span></a>
+      <div class="nav-right">
+        <button id="themeToggle" class="theme-btn" aria-label="Toggle color theme">☾</button>
+        <a class="nav-contact" href="mailto:jhongxw@gmail.com">Contact</a>
       </div>
     </nav>
+  </header>
 
-    <main id="top">
-      <section class="hero container">
-        <div class="hero-copy reveal">
-          <div class="eyebrow"><span class="status-dot"></span> Open to software engineering opportunities</div>
-          <h1>I build software that <em>works hard.</em></h1>
-          <p class="hero-lead">Full-Stack Software Engineer focused on scalable web applications, clean APIs, performance, security, and thoughtful user experiences.</p>
-          <div class="hero-actions">
-            <a class="button primary" href="#work">Explore my work <span>↓</span></a>
-            <a class="button secondary" href="resume.pdf" target="_blank" rel="noopener">View resume <span>↗</span></a>
-          </div>
-          <div class="hero-meta"><span>Based in New Jersey, USA</span><span>•</span><span>2+ years professional experience</span></div>
+  <main id="top">
+    <section class="hero container">
+      <div class="hero-copy">
+        <p class="eyebrow"><span></span> FULL-STACK SOFTWARE ENGINEER</p>
+        <h1>Jhon Garcia<br><span>Lecca</span></h1>
+        <p class="hero-text">I build scalable web applications with a focus on performance, security, accessibility, and clean engineering.</p>
+        <div class="hero-buttons">
+          <a class="button primary" href="#projects">View my work <b>↓</b></a>
+          <a class="button secondary" href="resume.pdf" target="_blank" rel="noopener">View resume <b>↗</b></a>
         </div>
-
-        <div class="terminal-card reveal delay-2" aria-label="Developer profile terminal">
-          <div class="terminal-top"><div class="window-dots"><i></i><i></i><i></i></div><span>jhon@portfolio ~ %</span><span class="terminal-live">● live</span></div>
-          <div class="terminal-body">
-            <p><span class="prompt">$</span> whoami</p>
-            <p class="terminal-output">Jhon Garcia Lecca</p>
-            <p><span class="prompt">$</span> stack --primary</p>
-            <p class="terminal-output">C# · .NET · Angular · TypeScript · SQL</p>
-            <p><span class="prompt">$</span> impact --highlight</p>
-            <div class="terminal-stats"><strong>100K+</strong><span>clients supported</span><strong>40%</strong><span>fewer assistance calls</span><strong>50K+</strong><span>client configurations</span></div>
-            <p><span class="prompt">$</span> status</p>
-            <p class="terminal-output success">✓ Building. Learning. Improving.</p>
-            <span class="terminal-caret"></span>
-          </div>
+        <div class="hero-links">
+          <a href="https://github.com/jhongia" target="_blank" rel="noopener">GitHub ↗</a>
+          <a href="https://www.linkedin.com/in/jhonGarcia1" target="_blank" rel="noopener">LinkedIn ↗</a>
+          <span>New Jersey, USA</span>
         </div>
-      </section>
+      </div>
+      <div class="hero-card">
+        <div class="card-label">ENGINEERING SNAPSHOT</div>
+        <div class="code-line"><span class="purple">const</span> engineer <span class="muted">=</span> {</div>
+        <div class="code-indent"><span class="blue">experience</span>: <span class="green">"2+ years"</span>,</div>
+        <div class="code-indent"><span class="blue">clients</span>: <span class="orange">"100K+"</span>,</div>
+        <div class="code-indent"><span class="blue">impact</span>: <span class="green">"40% fewer calls"</span>,</div>
+        <div class="code-indent"><span class="blue">focus</span>: [</div>
+        <div class="code-indent2"><span class="green">"Scalability"</span>,</div>
+        <div class="code-indent2"><span class="green">"Security"</span>,</div>
+        <div class="code-indent2"><span class="green">"Accessibility"</span></div>
+        <div class="code-indent">]</div>
+        <div class="code-line">};</div>
+        <div class="card-bottom"><span class="pulse"></span> Open to opportunities</div>
+      </div>
+    </section>
 
-      <section class="impact-strip container reveal">
-        <div><strong>100K+</strong><span>clients supported</span></div>
-        <div><strong>40%</strong><span>fewer assistance calls</span></div>
-        <div><strong>50K+</strong><span>client configurations</span></div>
-        <div><strong>WCAG</strong><span>accessibility focused</span></div>
-      </section>
+    <section class="metrics container">
+      <div><strong>100K+</strong><span>clients supported</span></div>
+      <div><strong>40%+</strong><span>fewer assistance calls</span></div>
+      <div><strong>50K+</strong><span>client configurations</span></div>
+      <div><strong>WCAG</strong><span>accessibility experience</span></div>
+    </section>
 
-      <section class="section container" id="work">
-        <div class="section-heading reveal"><div><span class="section-kicker">SELECTED WORK</span><h2>Things I've built.</h2></div><p>Projects that show how I think beyond just writing code.</p></div>
-        <div class="project-grid">
-          <article class="project-card featured reveal">
-            <div class="project-visual ai-visual"><span class="orb orb-a"></span><span class="orb orb-b"></span><div class="ai-window"><span>AI assistant</span><strong>Ask. Automate. Extend.</strong><small>Telegram → Python → OpenAI</small></div></div>
-            <div class="project-content"><div class="project-top"><span class="project-type">AI / AUTOMATION</span><a href="https://github.com/jhongia/AI-Personal-Assistant" target="_blank" rel="noopener" aria-label="View AI Personal Assistant on GitHub">↗</a></div><h3>AI Personal Assistant</h3><p>A modular conversational assistant connecting Telegram with OpenAI models through a lightweight Python backend, designed for automation and future tool integrations.</p><div class="tags"><span>Python</span><span>OpenAI</span><span>Telegram API</span><span>dotenv</span></div></div>
-          </article>
-          <article class="project-card reveal delay-1">
-            <div class="project-visual architecture"><div class="architecture-line one"></div><div class="architecture-line two"></div><div class="architecture-node">API</div><div class="architecture-node">SQL</div><div class="architecture-node">UI</div></div>
-            <div class="project-content"><div class="project-top"><span class="project-type">ENTERPRISE ENGINEERING</span></div><h3>Employee Self-Service Platform</h3><p>Enterprise web application work at ADP spanning Angular, C#, REST APIs and SQL Server for a platform serving 100,000+ clients.</p><div class="tags"><span>C#</span><span>.NET</span><span>Angular</span><span>SQL Server</span></div></div>
-          </article>
-          <article class="project-card reveal delay-2">
-            <div class="project-visual cloud"><span class="cloud-shape">☁</span><span class="cloud-node n1">Node</span><span class="cloud-node n2">S3</span><span class="cloud-node n3">MongoDB</span></div>
-            <div class="project-content"><div class="project-top"><span class="project-type">CLOUD / FULL STACK</span></div><h3>Document Processing App</h3><p>Full-stack document submission and processing application built during an ADP internship with Node.js, Python, AWS S3 and MongoDB.</p><div class="tags"><span>Node.js</span><span>Python</span><span>AWS S3</span><span>MongoDB</span></div></div>
-          </article>
+    <section class="section container" id="about">
+      <div class="section-title"><p>01 — ABOUT</p><h2>Engineering with<br><em>purpose.</em></h2></div>
+      <div class="section-content about-content">
+        <p class="large">Full-Stack Software Engineer experienced building enterprise applications with Angular, .NET, C#, JavaScript, TypeScript, Python, and SQL.</p>
+        <p>I enjoy taking complex problems and turning them into reliable, maintainable software. My experience includes enterprise applications supporting 100,000+ clients, API development, database optimization, security remediation, accessibility improvements, and CI/CD workflows.</p>
+      </div>
+    </section>
+
+    <section class="section container" id="experience">
+      <div class="section-title"><p>02 — EXPERIENCE</p><h2>Where I've<br><em>made an impact.</em></h2></div>
+      <div class="section-content timeline">
+        <article class="experience-item">
+          <div class="experience-meta"><span>2022 — 2024</span><span>Roseland, NJ</span></div>
+          <div><h3>Associate Application Developer</h3><h4>ADP · Automatic Data Processing</h4><ul><li>Developed enterprise Employee Self-Service applications with Angular/AngularJS, C#, JavaScript, and SQL for 100,000+ clients.</li><li>Integrated a real-time support chatbot that reduced assistance calls by more than 40%.</li><li>Built client-specific pages and menu configurations for 50,000+ users.</li><li>Optimized SQL queries and indexing, improved API performance, and remediated XSS vulnerabilities.</li><li>Implemented WCAG accessibility improvements and supported CI/CD deployment workflows.</li></ul><div class="tags"><span>C#</span><span>.NET</span><span>Angular</span><span>SQL Server</span><span>REST APIs</span></div></div>
+        </article>
+        <article class="experience-item">
+          <div class="experience-meta"><span>2021</span><span>Remote</span></div>
+          <div><h3>Software Engineering Intern</h3><h4>ADP · Automatic Data Processing</h4><ul><li>Developed a full-stack document submission and processing application using JavaScript, HTML, Bootstrap, and Python.</li><li>Built Node.js and Python services integrating AWS S3 for secure document storage.</li><li>Designed MongoDB data models for high-volume document processing.</li></ul><div class="tags"><span>Python</span><span>Node.js</span><span>AWS S3</span><span>MongoDB</span></div></div>
+        </article>
+      </div>
+    </section>
+
+    <section class="section container" id="projects">
+      <div class="section-title"><p>03 — PROJECTS</p><h2>Things I've<br><em>built.</em></h2></div>
+      <div class="section-content project-grid">
+        <a class="project" href="https://github.com/jhongia/AI-Personal-Assistant" target="_blank" rel="noopener">
+          <div class="project-number">01</div><div><p class="project-type">AI / AUTOMATION</p><h3>AI Personal Assistant <span>↗</span></h3><p>A modular conversational assistant connecting Telegram with OpenAI models through a lightweight Python backend.</p><div class="tags"><span>Python</span><span>OpenAI</span><span>Telegram API</span></div></div>
+        </a>
+        <div class="project">
+          <div class="project-number">02</div><div><p class="project-type">ENTERPRISE</p><h3>Employee Self-Service Platform</h3><p>Enterprise web application work at ADP spanning Angular, C#, REST APIs, and SQL Server for a platform serving 100,000+ clients.</p><div class="tags"><span>C#</span><span>.NET</span><span>Angular</span><span>SQL Server</span></div></div>
         </div>
-      </section>
-
-      <section class="section container" id="experience">
-        <div class="section-heading reveal"><div><span class="section-kicker">EXPERIENCE</span><h2>Where I've made an impact.</h2></div></div>
-        <div class="timeline">
-          <article class="timeline-item reveal"><div class="timeline-marker"></div><div class="timeline-date">JUL 2022 — SEP 2024</div><div class="timeline-card"><div class="timeline-title"><div><h3>Associate Application Developer</h3><p>ADP · Roseland, NJ</p></div><span class="pill">2 yrs 3 mos</span></div><ul><li>Built and maintained enterprise Employee Self-Service applications using Angular/AngularJS, C#, JavaScript and SQL.</li><li>Integrated a real-time support chatbot that reduced assistance calls by <strong>40%+</strong>.</li><li>Created dynamic client-specific experiences for <strong>50,000+</strong> users while consolidating multiple portals.</li><li>Optimized SQL queries and indexing, improved API performance, and remediated XSS vulnerabilities.</li><li>Delivered WCAG-focused accessibility improvements and supported CI/CD deployment workflows.</li></ul><div class="tags"><span>Angular</span><span>C#</span><span>.NET</span><span>SQL Server</span><span>REST APIs</span></div></div></article>
-          <article class="timeline-item reveal"><div class="timeline-marker"></div><div class="timeline-date">JUN 2021 — AUG 2021</div><div class="timeline-card"><div class="timeline-title"><div><h3>Software Engineering Intern</h3><p>ADP · Remote</p></div><span class="pill">Summer 2021</span></div><ul><li>Developed a full-stack document submission and processing application with JavaScript, HTML, Bootstrap and Python.</li><li>Built backend services with Node.js and Python integrating AWS S3 for secure document storage.</li><li>Designed MongoDB data models for high-volume document processing.</li></ul><div class="tags"><span>Python</span><span>Node.js</span><span>AWS S3</span><span>MongoDB</span></div></div></article>
+        <div class="project">
+          <div class="project-number">03</div><div><p class="project-type">CLOUD / FULL STACK</p><h3>Document Processing App</h3><p>Full-stack document submission and processing application built with Node.js, Python, AWS S3, and MongoDB.</p><div class="tags"><span>Node.js</span><span>Python</span><span>AWS S3</span><span>MongoDB</span></div></div>
         </div>
-      </section>
+      </div>
+    </section>
 
-      <section class="section container" id="skills">
-        <div class="section-heading reveal"><div><span class="section-kicker">TOOLBOX</span><h2>Technologies I work with.</h2></div><p>Click a category to filter the stack.</p></div>
-        <div class="skill-filters reveal"><button class="filter active" data-filter="all">All</button><button class="filter" data-filter="frontend">Frontend</button><button class="filter" data-filter="backend">Backend</button><button class="filter" data-filter="data">Data</button><button class="filter" data-filter="tools">Tools & AI</button></div>
-        <div class="skill-cloud reveal" id="skillCloud">
-          <span data-category="backend">C#</span><span data-category="backend">.NET</span><span data-category="frontend">Angular</span><span data-category="frontend">AngularJS</span><span data-category="frontend">JavaScript</span><span data-category="frontend">TypeScript</span><span data-category="backend">Node.js</span><span data-category="backend">Python</span><span data-category="data">SQL Server</span><span data-category="data">MySQL</span><span data-category="data">MongoDB</span><span data-category="tools">Git</span><span data-category="tools">GitHub Actions</span><span data-category="tools">Jenkins</span><span data-category="tools">Dynatrace</span><span data-category="tools">SonarQube</span><span data-category="tools">AWS S3</span><span data-category="tools">GitHub Copilot</span><span data-category="tools">Claude Code</span><span data-category="tools">Ollama</span><span data-category="tools">Codex</span>
-        </div>
-      </section>
+    <section class="section container" id="skills">
+      <div class="section-title"><p>04 — SKILLS</p><h2>My technical<br><em>toolbox.</em></h2></div>
+      <div class="section-content skills-grid">
+        <div><h3>Languages</h3><p>C# · JavaScript · TypeScript · Python · SQL · C++</p></div>
+        <div><h3>Frameworks</h3><p>.NET · Angular · AngularJS · Node.js</p></div>
+        <div><h3>Databases</h3><p>SQL Server · MySQL · MongoDB</p></div>
+        <div><h3>Tools & AI</h3><p>Git · GitHub Actions · Jenkins · Dynatrace · SonarQube · AWS S3 · GitHub Copilot · Claude Code · Codex · Ollama</p></div>
+      </div>
+    </section>
 
-      <section class="about-banner container reveal">
-        <div><span class="section-kicker">A LITTLE MORE</span><h2>Good engineering is more than code.</h2><p>I care about the details that make software dependable: accessibility, security, performance, maintainability, and a clear experience for the person using it.</p></div>
-        <div class="principles"><div><span>01</span><strong>Build for people</strong><small>Accessible, intuitive experiences.</small></div><div><span>02</span><strong>Measure impact</strong><small>Performance and outcomes matter.</small></div><div><span>03</span><strong>Keep learning</strong><small>Curious about AI and modern tooling.</small></div></div>
-      </section>
+    <section class="cta container">
+      <p>LET'S CONNECT</p><h2>Have a role in mind?</h2><a class="button primary" href="mailto:jhongxw@gmail.com">Let's talk ↗</a>
+    </section>
+  </main>
 
-      <section class="contact container reveal" id="contact">
-        <span class="section-kicker">HAVE A ROLE IN MIND?</span><h2>Let's build something<br /><em>worth shipping.</em></h2><p>I'm interested in teams solving meaningful problems with modern software and thoughtful engineering.</p><div class="contact-actions"><a class="button primary" href="mailto:jhongxw@gmail.com">Email me <span>↗</span></a><a class="button secondary" href="https://www.linkedin.com/in/jhonGarcia1" target="_blank" rel="noopener">LinkedIn <span>↗</span></a><a class="button secondary" href="https://github.com/jhongia" target="_blank" rel="noopener">GitHub <span>↗</span></a></div>
-      </section>
-    </main>
-
-    <footer><div class="container footer-inner"><span>© 2026 Jhon Garcia Lecca</span><span>Designed & built with HTML, CSS & JavaScript.</span><a href="#top">Back to top ↑</a></div></footer>
-    <script src="script.js"></script>
-  </body>
+  <footer><div class="container"><span>© 2026 Jhon Garcia Lecca</span><span>Built with HTML, CSS & JavaScript.</span><a href="#top">Back to top ↑</a></div></footer>
+  <script src="script.js"></script>
+</body>
 </html>
